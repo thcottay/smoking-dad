@@ -38,12 +38,13 @@ class Header extends React.Component {
         <header className={`header ${this.getHeaderSize()}`}>
           <Link to="/" className="logoType">
             <div className="logo">
-              <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
+              <img src="logo.svg" />
+              {/* <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} /> */}
             </div>
-            <div className="type">
+            {/* <div className="type">
               <h1>{config.headerTitle}</h1>
               <h2>{config.headerSubTitle}</h2>
-            </div>
+            </div> */}
           </Link>
           {/* <FontLoadedContext.Consumer>
             {loaded => (
@@ -111,18 +112,16 @@ class Header extends React.Component {
           }
 
           .logo {
-            border-radius: 65% 75%;
-            border: 1px solid #eee;
             display: inline-block;
-            height: 44px;
             margin: ${theme.space.inline.default};
             overflow: hidden;
             width: 44px;
             transition: all 0.5s;
 
             .homepage & {
-              height: 60px;
-              width: 60px;
+              width: 200px;
+              height: auto;
+              margin-top: 50px;
             }
 
             img {
@@ -179,9 +178,11 @@ class Header extends React.Component {
               transition: padding 0.5s;
 
               &.fixed {
-                height: ${theme.header.height.fixed};
+                height: 74px;
+                border-bottom: 1px solid #eee;
                 background-color: ${theme.color.neutral.white};
                 left: 0;
+                box-shadow: 0 0px 9px rgba(0,0,0,.8);
                 padding: 0 ${theme.space.m};
                 position: fixed;
                 top: 0;
@@ -219,8 +220,9 @@ class Header extends React.Component {
               margin: ${theme.space.inline.default};
 
               .fixed & {
-                height: 36px;
-                width: 36px;
+                height: auto;
+                width: 100px;
+                margin-top: 0;
               }
 
               .header.homepage:not(.fixed) & {

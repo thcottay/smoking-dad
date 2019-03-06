@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Illustration from "../Illustration";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
-  var hello = "hello ther eyou ";
-
+  console.log('theme: ', theme);
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>
-          {/* <strong>Smoking Dad</strong>  */}
+        {/* <h1>
           An average dad's log of grill outs and smoking barbecue.
-        </h1>
+        </h1> */}
+        <Illustration />
         {/* <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button> */}
@@ -21,17 +21,10 @@ const Hero = props => {
       <style jsx>{`
         .hero {
           align-items: center;
-          background: ${theme.hero.background};
-          background-image: url(${backgrounds.mobile});
-          background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
-          min-height: 70vh;
-          height: 100px;
-          padding: ${theme.space.inset.l};
-          padding-top: ${theme.header.height.homepage};
         }
 
         h1 {
@@ -100,7 +93,7 @@ const Hero = props => {
 
         @from-width tablet {
           .hero {
-            background-image: url(${backgrounds.tablet});
+            
           }
 
           h1 {
@@ -115,7 +108,7 @@ const Hero = props => {
 
         @from-width desktop {
           .hero {
-            background-image: url(${backgrounds.desktop});
+
           }
 
           h1 {
