@@ -4,14 +4,14 @@ import Illustration from "../Illustration";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
-  console.log('theme: ', theme);
+  console.log("theme: ", theme);
   return (
     <React.Fragment>
-      <section className="hero">
-        {/* <h1>
-          An average dad's log of grill outs and smoking barbecue.
-        </h1> */}
+      <section className="hero">        
         <Illustration />
+        <h1>
+          An average dad's log of grill outs and smoking barbecue.
+        </h1>
         {/* <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
         </button> */}
@@ -93,7 +93,6 @@ const Hero = props => {
 
         @from-width tablet {
           .hero {
-            
           }
 
           h1 {
@@ -108,7 +107,6 @@ const Hero = props => {
 
         @from-width desktop {
           .hero {
-
           }
 
           h1 {

@@ -13,7 +13,46 @@ function makeSmokePuff(origPuff) {
   setTimeout(function() {
     TweenMax.to(newPuffEl, 8, { y: -300, x: -200, opacity: 0, scale: 4 });
   }, 500);
+  setTimeout(function() {
+    document.getElementById("DADnGrill").removeChild(newPuffEl);
+  }, 8500);
   i++;
+}
+
+function flipBurger(burger, arm) {
+  const flipTime = 1;
+  TweenMax.from(burger, flipTime, {
+    rotation: 2,
+    transformOrigin: "50% 50%"
+  });
+  TweenMax.to(burger, flipTime, {
+    y: -120,
+    rotation: 180,
+    ease: Power1.easeOut,
+    transformOrigin: "50% 50%"
+  });
+  TweenMax.to(burger, flipTime, {
+    y: 0,
+    rotation: 359,
+    delay: flipTime,
+    ease: Power1.easeIn,
+    transformOrigin: "50% 50%"
+  });
+
+  TweenMax.to(arm, flipTime/2, {
+    rotation: 30,
+    ease: Power1.easeOut,
+    transformOrigin: "top 3"
+  });
+
+  TweenMax.to(arm, flipTime, {
+    rotation: 0,
+    ease: Power1.easeOut,
+    delay: flipTime,
+    transformOrigin: "top 3"
+  });
+
+
 }
 
 const Illustration = props => {
@@ -36,6 +75,13 @@ const Illustration = props => {
         setInterval(function() {
           makeSmokePuff(origPuff);
         }, 500);
+
+        const burger = document.getElementById("Burger");
+        const arm = document.getElementById("ARM");
+        flipBurger(burger, arm);
+        setInterval(function() {
+          flipBurger(burger, arm);
+        }, 5000);
       }}
       renumerateIRIElements={false}
       svgClassName="family-bbq"
