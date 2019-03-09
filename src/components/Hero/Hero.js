@@ -25,16 +25,21 @@ const Hero = props => {
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
+          position: relative;
         }
 
         h1 {
           text-align: center;
           font-size: ${theme.hero.h1.size};
           margin: ${theme.space.stack.l};
-          color: ${theme.hero.h1.color};
+          color: #20ffe7;
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
-
+          text-shadow: 0px 5px 12px rgba(0, 0, 0, .8);
+          position: absolute;
+          font-family: 'Raleway', san-serif;
+          font-weight: normal;
+          top: 70%;
           :global(strong) {
             position: relative;
 

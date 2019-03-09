@@ -71,7 +71,7 @@ class Header extends React.Component {
         <style jsx>{`
           .header {
             align-items: center;
-            justify-content: center;
+            // justify-content: center;
             background-color: ${theme.color.neutral.white};
             display: flex;
             height: ${theme.header.height.default};
