@@ -45,7 +45,7 @@ const PostShare = props => {
           >
             <TwitterIcon round size={iconSize} />
           </TwitterShareButton>
-          <GooglePlusShareButton
+          {/* <GooglePlusShareButton
             url={url}
             additionalProps={{
               "aria-label": "Google share"
@@ -55,7 +55,7 @@ const PostShare = props => {
             <GooglePlusShareCount url={url}>
               {count => <div className="share-count">{filter(count)}</div>}
             </GooglePlusShareCount>
-          </GooglePlusShareButton>
+          </GooglePlusShareButton> */}
           <FacebookShareButton
             url={url}
             quote={`${title} - ${excerpt}`}
