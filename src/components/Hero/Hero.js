@@ -32,12 +32,12 @@ const Hero = props => {
           text-align: center;
           font-size: ${theme.hero.h1.size};
           margin: ${theme.space.stack.l};
-          color: #20ffe7;
+          color: ${theme.color.brand.green};
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
-          text-shadow: 0px 5px 12px rgba(0, 0, 0, .8);
+          text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
           position: absolute;
-          font-family: 'Raleway', san-serif;
+          font-family: ${theme.font.headings};
           font-weight: normal;
           top: 70%;
           :global(strong) {

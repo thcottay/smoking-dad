@@ -8,13 +8,18 @@ function makeSmokePuff(origPuff) {
   newPuff.style.opacity = 1;
   var newID = "smoke" + i;
   newPuff.setAttribute("id", newID);
-  document.getElementById("DADnGrill").insertAdjacentElement("beforeend", newPuff);
+  const DADnGrill = document.getElementById("DADnGrill");
+  if (DADnGrill) {
+    DADnGrill.insertAdjacentElement("beforeend", newPuff);
+  }
   var newPuffEl = document.getElementById(newID);
   setTimeout(function() {
     TweenMax.to(newPuffEl, 8, { y: -300, x: -200, opacity: 0, scale: 4 });
   }, 500);
   setTimeout(function() {
-    document.getElementById("DADnGrill").removeChild(newPuffEl);
+    if (DADnGrill) {
+      DADnGrill.removeChild(newPuffEl);
+    }
   }, 8500);
   i++;
 }
@@ -39,7 +44,7 @@ function flipBurger(burger, arm) {
     transformOrigin: "50% 50%"
   });
 
-  TweenMax.to(arm, flipTime/2, {
+  TweenMax.to(arm, flipTime / 2, {
     rotation: 30,
     ease: Power1.easeOut,
     transformOrigin: "top 3"
@@ -51,8 +56,6 @@ function flipBurger(burger, arm) {
     delay: flipTime,
     transformOrigin: "top 3"
   });
-
-
 }
 
 const Illustration = props => {

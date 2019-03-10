@@ -88,19 +88,7 @@ const Item = props => {
             width: 50%;
           }
 
-          &:first-child {
-            &::before {
-              border-top: 1px solid ${theme.line.color};
-              content: "";
-              height: 0;
-              position: absolute;
-              top: ${`calc(${theme.space.default} * -1.5)`};
-              left: 50%;
-              transform: translateX(-50%);
-              transition: all ${theme.time.duration.default};
-              width: 50%;
-            }
-          }
+ 
         }
 
         h1 {
@@ -108,7 +96,8 @@ const Item = props => {
           line-height: ${theme.blog.h1.lineHeight};
           font-size: ${theme.blog.h1.size};
           text-remove-gap: both;
-
+          font-family: ${theme.font.headings};
+          color: ${theme.color.brand.navy};
           :global(.arrow) {
             display: none;
             position: relative;
@@ -124,7 +113,7 @@ const Item = props => {
           background: transparent;
 
           :global(svg) {
-            fill: ${theme.icon.color};
+            fill: ${theme.color.brand.blue};
             margin: ${theme.space.inline.xs};
           }
           span {
@@ -211,11 +200,11 @@ const Item = props => {
                 transform: scale(1.1);
               }
               h1 {
-                color: ${theme.blog.h1.hoverColor};
+                color: ${theme.color.brand.blue};
               }
               :global(.arrow) {
                 opacity: 1;
-                stroke: ${theme.color.special.attention};
+                stroke: ${theme.color.brand.blue};
                 transform: translateX(0);
               }
             }
@@ -224,8 +213,8 @@ const Item = props => {
             }
             :global(.arrow) {
               display: inline-block;
-              fill: ${theme.color.special.attention};
-              stroke: ${theme.color.special.attention};
+              fill: ${theme.color.brand.blue};
+              stroke: ${theme.color.brand.blue};
               stroke-width: 40;
               stroke-linecap: round;
               opacity: 0;

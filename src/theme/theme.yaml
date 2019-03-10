@@ -60,11 +60,17 @@ color:
     lightActive: '#709425'
     dark: '#709425'
     darkActive: '#709425'
+    green: '#20ffe7'
+    blue: '#3a8ecc'
+    navy: '#284961'
+    coral: '#ff785c'
+    maroon: '#661312'
   special:
     attention: &color-special-attention orange
 # FONT
 font:
   # font options
+  headings: 'Raleway ,  san-serif'
   family:
     initial: 'Arial, sans-serif'
     target: &font-family-target 'Open Sans'
