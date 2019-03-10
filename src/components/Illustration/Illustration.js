@@ -79,16 +79,26 @@ const Illustration = props => {
         origPuff.style.opacity = 0;
 
         makeSmokePuff(origPuff);
-        setInterval(function() {
+        var smokeInterval = setInterval(function() {
           makeSmokePuff(origPuff);
         }, 500);
+        //multiple intervals were being called which made the smoke super thick
+        //there's probably a better way to do this in a more "react" statement management sort of way,
+        //but for now this is what we've got
+        //note to self: come back later and make this manage state better the more "react" way
+        if (smokeInterval > 30) {
+          clearInterval(smokeInterval);
+        }
 
         const burger = document.getElementById("Burger");
         const arm = document.getElementById("ARM");
         flipBurger(burger, arm);
-        setInterval(function() {
-          flipBurger(burger, arm);
-        }, 5000);
+        var flipInterval;
+        if (!flipInterval) {
+          flipInterval = setInterval(function() {
+            flipBurger(burger, arm);
+          }, 5000);
+        }
       }}
       renumerateIRIElements={false}
       svgClassName="family-bbq"
