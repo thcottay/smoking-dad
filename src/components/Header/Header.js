@@ -115,13 +115,15 @@ class Header extends React.Component {
             display: inline-block;
             margin: ${theme.space.inline.default};
             overflow: hidden;
-            width: 44px;
+            // width: 44px;
+            max-width: 120px;
             transition: all 0.5s;
 
             .homepage & {
               width: 200px;
               height: auto;
               margin-top: 50px;
+              max-width: none;
             }
 
             img {

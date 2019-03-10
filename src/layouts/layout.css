@@ -8,3 +8,4 @@ body {background: #d8e8f5;}
 .logoType {position: relative; z-index: 10; /*margin: 0 auto; */max-width: 220px;}
 .family-bbq {width: 100%; height: auto;}
 .illustration {display: block; width: 100%;}
+.homepage .logoType {max-width: none;}

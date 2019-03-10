@@ -13,14 +13,18 @@ function makeSmokePuff(origPuff) {
     DADnGrill.insertAdjacentElement("beforeend", newPuff);
   }
   var newPuffEl = document.getElementById(newID);
+
   setTimeout(function() {
-    TweenMax.to(newPuffEl, 8, { y: -300, x: -200, opacity: 0, scale: 4 });
+    if (DADnGrill) {
+      TweenMax.to(newPuffEl, 8, { y: -300, x: -200, opacity: 0, scale: 4 });
+    }
   }, 500);
   setTimeout(function() {
     if (DADnGrill) {
       DADnGrill.removeChild(newPuffEl);
     }
   }, 8500);
+
   i++;
 }
 
