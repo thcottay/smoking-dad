@@ -24,8 +24,9 @@ const Hero = props => {
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
-          justify-content: center;
+          
           position: relative;
+          min-height: 380px;
         }
 
         h1 {
@@ -39,7 +40,9 @@ const Hero = props => {
           position: absolute;
           font-family: ${theme.font.headings};
           font-weight: normal;
-          top: 70%;
+          bottom: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
           :global(strong) {
             position: relative;
 
