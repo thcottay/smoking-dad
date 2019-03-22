@@ -22,7 +22,7 @@ The next day just prior to throwing them on the smoker, I dry rubbed them with a
 
 ![Smoked ribs](./ribs-cooked.JPG)
 
-The ribs went on the smoker at 10:30am. The tool for the job was the <a href="https://www.amazon.com/gp/product/B06XKK552M/ref=ppx_yo_dt_b_asin_title_o05__o00_s02?ie=UTF8&psc=1" target="_blank">Traeger Lil Texas Elite 22</a> loaded with <a href="https://www.amazon.com/Traeger-PEL313-Barbecue-Pellets-20-Pound/dp/B0015X54J8/ref=sr_1_19?crid=3MZEO99RPW2RM&keywords=traeger+pellets&qid=1550512325&s=lawn-garden&sprefix=traeger%2Clawngarden%2C145&sr=1-19" target="_blank">apple pellets</a>. The temperature was set at 225 degrees for two hours. After two hours, the ribs were wrapped tightly in heavy duty aluminum foil to help raise the internal temperature faster. They were pulled off the smoker at 2pm.
+The ribs went on the smoker at 10:30am. The tool for the job was the <a href="https://www.amazon.com/gp/product/B06XKK552M/ref=ppx_yo_dt_b_asin_title_o05__o00_s02?ie=UTF8&psc=1" target="_blank">Traeger Lil Texas Elite 22</a> loaded with <a href="https://www.amazon.com/Traeger-PEL318-All-Natural-Hardwood-Pellets/dp/B01F6ME4F8" target="_blank">apple pellets</a>. The temperature was set at 225 degrees for two hours. After two hours, the ribs were wrapped tightly in heavy duty aluminum foil to help raise the internal temperature faster. They were pulled off the smoker at 2pm.
 
 ## Prep
 
